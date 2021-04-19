@@ -1,6 +1,6 @@
 ### Objective
 
-Your assignment is to build an internal API for a fake financial institution using Java and any framework.
+Your assignment is to build an internal API for a fake financial institution using Kotlin or Java and any framework.
 
 ### Brief
 
@@ -28,7 +28,7 @@ Implement following banking APIs:
 
 ### Requirements
 
-- Latest **Java**
+- Latest **Kotlin** or **Java** 
 - **Any framework**
 - Statefull service (not in memory solution)
 - Ignore authentication and authorization
