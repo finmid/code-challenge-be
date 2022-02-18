@@ -30,7 +30,7 @@ Implement following banking APIs:
 
 - Latest **Kotlin** or **Java** 
 - **Any framework**
-- Stateless service with external data storage 
+- Stateless service with external data storage (no in memory db e.h. h2 is allowed)
 - Ignore authentication and authorization
 - Code will be pushed to **private Github repository** and dedicated finmid members will be added as collaborators 
 
