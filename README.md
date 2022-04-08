@@ -24,7 +24,7 @@ Transaction:
 Implement following banking APIs:
 - create new account with predefined balance
 - fetch account balance by `accountId`
-- create transaction between two accounts 
+- create transaction between two accounts, that impacts account balance
 
 ### Requirements
 
