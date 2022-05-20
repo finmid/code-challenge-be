@@ -36,4 +36,4 @@ Implement following banking APIs:
 
 All the best and happy coding,
 
-The finmid Team
+The finmid Team.
