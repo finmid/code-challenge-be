@@ -31,10 +31,11 @@ Implement following banking APIs:
 - Latest **Kotlin** or **Java** 
 - **Any framework**
 - Stateless service 
-- Local development environment 
-    - Ability to run locally without any manual setup
-    - External data storage (in memory db e.g. h2 is NOT allowed)
+- Persistance layer using database
+    - In memory db e.g. h2 is NOT allowed
     - Please don't host any db anywhere 
+- Local development environment 
+    - Ability to run locally without any manual setup    
 - Ignore authentication and authorization
 - Code will be pushed to **private Github repository** and dedicated finmid members will be added as collaborators 
 
