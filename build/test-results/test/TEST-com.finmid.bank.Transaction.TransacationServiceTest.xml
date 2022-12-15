@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.finmid.bank.Transaction.TransacationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-12-15T18:18:09" hostname="Nathanyels-MBP.fritz.box" time="0.039">
-  <properties/>
-  <testcase name="should throw Invalid account exception in case of account does not exist()" classname="com.finmid.bank.Transaction.TransacationServiceTest" time="0.004"/>
-  <testcase name="should throw Invalid balance exception in case of amount is bigger than the balance()" classname="com.finmid.bank.Transaction.TransacationServiceTest" time="0.028"/>
-  <testcase name="should execute a transfer from an account to another()" classname="com.finmid.bank.Transaction.TransacationServiceTest" time="0.007"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
