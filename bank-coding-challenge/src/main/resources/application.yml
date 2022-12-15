@@ -1,0 +1,13 @@
+## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+spring:
+  datasource:
+    url: &dbURL jdbc:mysql://localhost:3306/bank
+    username: &dbUser root
+    password: &dbPassword 123456
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
