@@ -1,2 +1,4 @@
-/environment-stack/**   @finmid/SRE
-*                       @finmid/Backend
+
+/environment-stack/** @finmid/SRE
+* @finmid/Backend
+
