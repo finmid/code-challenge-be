@@ -1,2 +1,3 @@
 * @finmid/Backend
+.github/** @finmid/SRE
 /environment-stack/** @finmid/SRE
