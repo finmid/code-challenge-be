@@ -22,7 +22,7 @@ Transaction:
 ```
 
 Implement following banking APIs:
-- create new account with predefined balance
+- create new account with a possibility to define balance
 - fetch account balance by `accountId`
 - create transaction between two accounts, that impacts account balance
 
