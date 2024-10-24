@@ -31,8 +31,8 @@ Implement following banking APIs:
 - Latest **Kotlin** or **Java** 
 - **Any framework**
 - Stateless service 
-- Persistance layer using database
-    - In memory solution are NOW ALLOWED (including h2 database)
+- Persistence layer using database
+    - In memory solutions are NOW ALLOWED (including h2 database)
     - Please don't host any db anywhere 
 - Local development environment 
     - Ability to run locally without any manual setup    
