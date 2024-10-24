@@ -32,7 +32,7 @@ Implement following banking APIs:
 - **Any framework**
 - Stateless service 
 - Persistance layer using database
-    - In memory db e.g. h2 is NOT allowed
+    - In memory solution are NOW ALLOWED (including h2 database)
     - Please don't host any db anywhere 
 - Local development environment 
     - Ability to run locally without any manual setup    
