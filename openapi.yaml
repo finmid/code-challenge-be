@@ -1,0 +1,121 @@
+openapi: 3.1.0
+info:
+  title: finmid Backend Challenge
+  summary: "Banking API"
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080/
+    description: Local server
+tags:
+  - name: Accounts API
+  - name: Transactions API
+
+paths:
+  /v1/accounts:
+    post:
+      tags:
+        - Accounts API
+      summary: Create account
+      description: Create a new account with optional balance
+      operationId: createAccount
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Account'
+        required: true
+      responses:
+        201:
+          description: Account created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+  /v1/accounts/{accountId}:
+    get:
+      tags:
+        - Accounts API
+      summary: Get account
+      description: Get account by id
+      operationId: getAccount
+      parameters:
+        - name: accountId
+          in: path
+          required: true
+          schema:
+            $ref: "#/components/schemas/AccountId"
+      responses:
+        200:
+          description: Account details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+  /v1/transactions:
+    post:
+      tags:
+        - Transactions API
+      description: Perform a transaction between two accounts
+      operationId: createTransaction
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transaction'
+        required: true
+      responses:
+        201:
+          description: Created transaction
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Transaction'
+
+components:
+  schemas:
+    AccountId:
+      type: string
+      minLength: 1
+      maxLength: 36
+      examples: 
+        - account-1
+    TransactionId:
+      type: string
+      minLength: 1
+      maxLength: 36
+      examples: 
+        - transaction-1
+
+    Account:
+      type: object
+      required:
+        - id
+      properties:
+        id:
+          $ref: "#/components/schemas/AccountId"
+        balance:
+          type: number
+          format: double
+          examples: 
+            - 123.45
+    Transaction:
+      type: object
+      required:
+        - id
+        - fromAccountId
+        - toAccountId
+        - amount
+      properties:
+        id:
+          $ref: "#/components/schemas/TransactionId"
+        fromAccountId:
+          description: Source account id
+          $ref: "#/components/schemas/AccountId"
+        toAccountId:
+          description: Destination account id
+          $ref: "#/components/schemas/AccountId"
+        amount:
+          type: number
+          format: double
+          examples: 
+            - 123.45
